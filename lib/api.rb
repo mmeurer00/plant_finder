@@ -1,5 +1,12 @@
-require_relative "../lib/modules/plantfinder.rb"
 # All data will be grabbed and stored here
-class PlantFinder::API
 
+class PlantFinder::API
+    def initialize
+        @url = "https://trefle.io/api/v1/plants?token=2dKZGFV1m10KlvMNTV1BJ8v9me7MKyaT1eBXf7XlfzE"
+    end
+    
+    def get_plant_data
+        plant_hash = HTTParty.get(@url)
+        binding.pry
+    end   
 end
