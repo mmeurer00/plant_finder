@@ -1,0 +1,3 @@
+class PLANTFINDER::API
+
+end
