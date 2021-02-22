@@ -1,3 +1,3 @@
-class PLANTFINDER::API
+class PlantFinder::API
 
 end

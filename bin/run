@@ -1,6 +1,9 @@
 #!/usr/bin/env ruby
 
-puts "hello I'm running in ruby"
+require_relative "../config/environment"
+
+PlantFinder::CLI.new
+
 
 
 

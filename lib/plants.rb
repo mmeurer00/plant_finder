@@ -1,3 +1,3 @@
-class PLANTFINDER::Plants
+class PlantFinder::Plants
 
 end
