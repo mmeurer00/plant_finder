@@ -6,7 +6,17 @@ class PlantFinder::API
     end
     
     def get_plant_data
+        organized_data = []
         plant_hash = HTTParty.get(@url)
+        plant_array = plant_hash["data"]
         binding.pry
     end   
+
+    def create_plant_objects(plant_array)
+        plant_array.each do |plant_hash|
+            Plant.new(plant_hash)
+        end
+    end
+    
 end
+

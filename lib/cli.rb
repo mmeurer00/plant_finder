@@ -7,6 +7,7 @@ class PlantFinder::CLI
 
     def greeting
         puts "\n Welcome to Plant Finder!"
+        puts "\n ---___---Loading Data---___---"
     end
 
     def menu
