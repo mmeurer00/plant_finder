@@ -1,7 +1,10 @@
 # gets inputs and will show strings/ display
+require_relative '../lib/api.rb'
+
 class PlantFinder::CLI
     def run
         greeting
+        PlantFinder::API.new.create_plant_objects(plant_array)
         menu
     end
 
