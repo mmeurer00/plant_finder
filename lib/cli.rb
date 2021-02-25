@@ -13,7 +13,9 @@ class PlantFinder::CLI
         puts "\n ---___---Loading Data---___---"
     end
 
-    def menu
+    def input
         puts " \nPlease enter the common name of a plant species."
+        user_input = gets.chomp
     end
+
 end

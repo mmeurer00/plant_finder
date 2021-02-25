@@ -12,7 +12,6 @@ class PlantFinder::Plant
 
     def self.find_by_common_name(name) 
         @@plants.find {|plant| plant.common_name.downcase == name.downcase}
-        binding.pry
     end
 
 end
