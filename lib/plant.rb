@@ -1,26 +1,15 @@
 # This is where the data will be stored
 class PlantFinder::Plant
         @@plants = []
-    def initialize(plant_hash = nil)
-        @@plants << plant_hash
-        #binding.pry
+    def initialize(plant_hash=nil)
+        @common_name = plant_hash["common_name"]
+        @scientific_name = plant_hash["scientific_name"]
+        @family_common_name = plant_hash["family_common_name"]
+        @genus = plant_hash["genus"]
     end
 
-    def organized_plant_hash
-        keys = ["common_name", "scientific_name"]
-        @@plants.map do |hash|
-            hash.select { |k, _| keys.include? k }
-        end
-    end
-
-    def find_by_common_name(name)
-        @@plants.each do |hash| 
-            if hash["common_name"] == name
-                hash.each do |key, value|
-                    puts "#{key}= #{value}"
-                end
-            end
-        end
+    def find_by_common_name(name) 
+        @common_name.find(name)
         binding.pry
     end
 
