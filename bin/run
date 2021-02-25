@@ -2,9 +2,9 @@
 require "pry"
 require_relative "../lib/config/environment.rb"
 
-#PlantFinder::.new.create_plant_objects
+#PlantFinder::API.new.create_plant_objects
 
 PlantFinder::API.new.get_plant_data
 
-PlantFinder::Plant.new.find_by_common_name("Evergreen oak")
+PlantFinder::Plant.find_by_common_name("Evergreen oak")
 binding.pry
