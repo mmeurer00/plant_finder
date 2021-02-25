@@ -1,24 +1,21 @@
 # This is where the data will be stored
 class PlantFinder::Plant
-    @@plants = []
+        @@plants = []
     def initialize(plant_hash=nil)
-        if plant_hash != nil
-            plant_hash.each do |key, value|
-                self.class.attr_accessor(key)
-                self.send("#{key}=", value)
+        @@plants << plant_hash
+        #binding.pry
+    end
+
+
+    def find_by_common_name(name)
+        @@plants.each do |hash| 
+            if hash["common_name"] == name
+                hash.each do |key, value|
+                    puts "#{key} = #{value}"
+                end
             end
         end
-        @@plants << self
+        binding.pry
     end
 
-    def find_by_common_name(name = nil)
-        if name != nil
-            @@plants.detect {|plant| plant.name == name}
-        end
-    end
-
-
-    def self.all
-        @@plants
-    end
 end
