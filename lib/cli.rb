@@ -13,12 +13,21 @@ class PlantFinder::CLI
     end
 
     def input
-        puts " \nPlease enter the common name of a plant species:"
-        name = gets.chomp
-        choosen_plant = PlantFinder::Plant.find_by_common_name(name)
-        puts "\n-Scientific name: #{choosen_plant.scientific_name} \n
+        while true
+            puts " \nPlease enter the common name of a plant species:\n"
+            name = gets.chomp
+            if name == "exit" 
+                return
+            end
+            choosen_plant = PlantFinder::Plant.find_by_common_name(name)
+            if choosen_plant
+                puts "\n-Scientific name: #{choosen_plant.scientific_name} \n
 -Family common name: #{choosen_plant.family_common_name}\n
--Genus: #{choosen_plant.genus} \n"
+-Genus: #{choosen_plant.genus} \n
+-Family: #{choosen_plant.family}"
+            else 
+            puts "\nSorry we don't have that plant species in our system quite yet!\n "
+            end
+        end
     end
-
 end
