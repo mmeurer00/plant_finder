@@ -5,7 +5,6 @@ class PlantFinder::API
     end
     
     def get_plant_data
-        organized_data = []
         plant_hash = HTTParty.get(@url)
         plant_array = plant_hash["data"]
         self.create_plant_objects(plant_array)

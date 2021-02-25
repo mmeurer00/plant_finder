@@ -4,8 +4,8 @@ require_relative '../lib/api.rb'
 class PlantFinder::CLI
     def run
         greeting
-        PlantFinder::API.new.create_plant_objects(plant_array)
-        menu
+        PlantFinder::API.new.get_plant_data
+        input
     end
 
     def greeting
@@ -15,7 +15,9 @@ class PlantFinder::CLI
 
     def input
         puts " \nPlease enter the common name of a plant species."
-        user_input = gets.chomp
+        name = gets.chomp
+        puts PlantFinder::Plant.find_by_common_name(name)
+
     end
 
 end
