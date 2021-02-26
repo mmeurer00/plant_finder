@@ -7,8 +7,6 @@ Users can access PlantFinder by cloning this repository.
 
 1. Find the green "Code" button:
 
-<img src="https://images.app.goo.gl/4SH4cZ3kiuYFiCgt8">
-
 2. Click it, and a tab should drop down including a github link.
 
 3. Manually copy or click the clipboard icon to copy the link.
@@ -27,7 +25,7 @@ user@Users-MacBook_Air plant_finder %
 ```
 bin/run
 ```
-7. Congrats 🎉  You can now search for plants!
+7. Congrats 🎉 You can now search for plants!
 ## Usage
 When prompted with the following line, type in your plant species common name into the terminal.
 ```bash
@@ -63,3 +61,4 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/mmeure
 ## License
 
 [MIT](https://github.com/mmeurer00/plant_finder/blob/main/LICENSE)
+ 
