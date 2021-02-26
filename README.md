@@ -5,7 +5,7 @@ Welcome to PlantFinder! A program allows a user to enter the common name of a pl
 ## Installation
 Users can access PlantFinder by cloning this repository. 
     1. Find the green "Code" button:
-![alt text](https://images.app.goo.gl/4SH4cZ3kiuYFiCgt8)
+<img src="https://images.app.goo.gl/4SH4cZ3kiuYFiCgt8">
 
 ## Usage
 When prompted with the following line, type in your plant species common name into the terminal.
