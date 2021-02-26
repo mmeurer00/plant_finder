@@ -21,7 +21,7 @@ and press enter.
 ```
 user@Users-MacBook_Air plant_finder % 
 ```
-6. Once inside plant finder run the program by typing in your terminal:
+6. Once inside plant_finder run the program by typing in your terminal:
 ```
 bin/run
 ```
