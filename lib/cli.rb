@@ -39,7 +39,7 @@ class PlantFinder::CLI
 -Family: #{choosen_plant.family} \n
 -Genus: #{choosen_plant.genus}".colorize(:green)
             else 
-            puts "\nSorry we don't have that plant species in our system quite yet!\n "
+            puts "\nSorry we don't have that plant species in our system quite yet!\n ".colorize(:magenta)
             end
         end
     end
