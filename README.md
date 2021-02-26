@@ -25,7 +25,7 @@ user@Users-MacBook_Air plant_finder %
 ```
 bin/run
 ```
-7. Congrats 🎉 You can now search for plants!
+7. Congrats 🎉 you can now search for plants!
 ## Usage
 When prompted with the following line, type in your plant species common name into the terminal.
 ```bash
