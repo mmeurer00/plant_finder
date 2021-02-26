@@ -46,4 +46,5 @@ class PlantFinder::CLI
 
     def goodbye
         puts "\nThank you for using Plant Base!\n ".colorize(:yellow)
+    end
 end
