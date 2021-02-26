@@ -1,4 +1,4 @@
-# PlantFinder
+# PlantFinder🌱
 
 Welcome to PlantFinder! A program allows a user to enter the common name of a plant species into their terminal, and receive an output of the species classification (scientific name, family common name, genus, and family). 
 
