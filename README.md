@@ -2,7 +2,7 @@
 
 Welcome to PlantFinder! A program allows a user to enter the common name of a plant species into their terminal, and receive an output of the species classification (scientific name, family common name, genus, and family). 
 
-## Installation
+## Installation 🌳
 Users can access PlantFinder by cloning this repository. 
 
 1. Find the green "Code" button:
@@ -26,7 +26,7 @@ user@Users-MacBook_Air plant_finder %
 bin/run
 ```
 7. Congrats 🎉 you can now search for plants!
-## Usage
+## Usage 🌲
 When prompted with the following line, type in your plant species common name into the terminal.
 ```bash
 Please enter the common name of a plant species (enter 'exit' to close program):
@@ -54,11 +54,11 @@ You know the program has quit when the user receives the message:
 Thank you for using Plant Base!
 ```
 
-## Contributing
+## Contributing 🌿
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/mmeurer00/plant_finder.
 
-## License
+## License 🌵
 
 [MIT](https://github.com/mmeurer00/plant_finder/blob/main/LICENSE)
  
