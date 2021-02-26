@@ -5,16 +5,18 @@ class PlantFinder::CLI
         greeting
         PlantFinder::API.new.get_plant_data
         input
+        goodbye
     end
 
     def greeting
-        puts "\n Welcome to Plant Base!"
-        puts "\n ---___--- * Loading Data * ---___---"
+        puts "\nWelcome to Plant Base!"
+        puts "\nThe best data base for looking up plant classification!"
+        puts "\n---___--- * Loading Data * ---___---"
     end
 
     def input
         while true
-            puts " \nPlease enter the common name of a plant species:\n"
+            puts " \nPlease enter the common name of a plant species (enter 'exit' to close program):\n"
             name = gets.chomp
             if name == "exit" 
                 return
@@ -29,5 +31,9 @@ class PlantFinder::CLI
             puts "\nSorry we don't have that plant species in our system quite yet!\n "
             end
         end
+    end
+
+    def goodbye
+        puts "\nThank you for using Plant Base!\n "
     end
 end
