@@ -7,7 +7,7 @@ Users can access PlantFinder by cloning this repository.
 
 1. Find the green "Code" button:
 
-2. Click it, and a tab should drop down including a github link.
+2. Click it, and a tab should drop down including a github link (make sure to select the one under SSH).
 
 3. Manually copy or click the clipboard icon to copy the link.
 
