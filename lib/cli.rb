@@ -9,14 +9,25 @@ class PlantFinder::CLI
     end
 
     def greeting
-        puts "\nWelcome to Plant Base!"
-        puts "\nThe best data base for looking up plant classification!"
-        puts "\n---___--- * Loading Data * ---___---"
+        puts "\nWelcome to Plant Base!".colorize(:yellow)
+        puts "
+        ,,,                      ,,,
+       {{{}}    ,,,             {{{}}    ,,,
+    ,,, ~Y~    {{{}},,,      ,,, ~Y~    {{{}},,,
+   {{}}} |/,,,  ~Y~{{}}}    {{}}} |/,,,  ~Y~{{}}}
+    ~Y~ \|{{}}}/\|/ ~Y~  ,,, ~Y~ \|{{}}}/\|/ ~Y~  ,,,
+    \|/ \|/~Y~  \|,,,|/ {{}}}\|/ \|/~Y~  \|,,,|/ {{}}}
+    \|/ \|/\|/  \{{{}}/  ~Y~ \|/ \|/\|/  \{{{}}/  ~Y~
+    \|/\\|/\|/ \\|~Y~//  \|/ \|/\\|/\|/ \\|~Y~//  \|/
+    \|//\|/\|/,\\|/|/|// \|/ \|//\|/\|/,\\|/|/|// \|/".colorize(:magenta)
+   puts " ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ ".colorize(:green)
+        puts "\nThe best data base for looking up plant classification!".colorize(:yellow)
+        puts "\n---___--- * Loading Data * ---___---".colorize(:magenta)
     end
 
     def input
         while true
-            puts " \nPlease enter the common name of a plant species (enter 'exit' to close program):\n"
+            puts " \nPlease enter the common name of a plant species (enter 'exit' to close program):\n".colorize(:yellow)
             name = gets.chomp
             if name == "exit" 
                 return
@@ -26,7 +37,7 @@ class PlantFinder::CLI
                 puts "\n-Scientific name: #{choosen_plant.scientific_name} \n
 -Family common name: #{choosen_plant.family_common_name}\n
 -Genus: #{choosen_plant.genus} \n
--Family: #{choosen_plant.family}"
+-Family: #{choosen_plant.family}".colorize(:green)
             else 
             puts "\nSorry we don't have that plant species in our system quite yet!\n "
             end
@@ -34,6 +45,5 @@ class PlantFinder::CLI
     end
 
     def goodbye
-        puts "\nThank you for using Plant Base!\n "
-    end
+        puts "\nThank you for using Plant Base!\n ".colorize(:yellow)
 end
