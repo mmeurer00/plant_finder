@@ -19,8 +19,32 @@ Or install it yourself as:
     $ gem install plant_finder
 
 ## Usage
+When prompted with the following line, type in your plant species common name into the terminal.
+```bash
+Please enter the common name of a plant species (enter 'exit' to close program):
+```
+For example, if you were to enter:
+```
+Evergreen oak
+```
+The program would return:
+```
+-Scientific name: Quercus rotundifolia 
 
-TODO: Write usage instructions here
+-Family common name: Beech family 
+
+-Family: Fagaceae
+
+-Genus: Quercus 
+```
+Once running, the program will keep running until prompted, which can be done by entering 'exit':
+```
+exit
+```
+You know the program has quit when the user recieves the message:
+```
+Thank you for using Plant Base!
+```
 
 ## Development
 

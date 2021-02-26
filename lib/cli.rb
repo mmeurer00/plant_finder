@@ -36,8 +36,8 @@ class PlantFinder::CLI
             if choosen_plant
                 puts "\n-Scientific name: #{choosen_plant.scientific_name} \n
 -Family common name: #{choosen_plant.family_common_name}\n
--Genus: #{choosen_plant.genus} \n
--Family: #{choosen_plant.family}".colorize(:green)
+-Family: #{choosen_plant.family} \n
+-Genus: #{choosen_plant.genus}".colorize(:green)
             else 
             puts "\nSorry we don't have that plant species in our system quite yet!\n "
             end
