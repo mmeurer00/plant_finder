@@ -5,7 +5,7 @@ Welcome to PlantFinder! A program allows a user to enter the common name of a pl
 ## Installation 🌳
 Users can access PlantFinder by cloning this repository. 
 
-1. Find the green "Code" button:
+1. Scroll up and find the green "Code" button:
 
 2. Click it, and a tab should drop down including a github link (make sure to select the one under SSH).
 
@@ -21,9 +21,9 @@ and press enter.
 ```
 user@Users-MacBook_Air plant_finder % 
 ```
-6. Once inside plant_finder run the program by typing in your terminal:
+6. Once inside plant_finder run the program by typing 'bin/run' in your terminal:
 ```
-bin/run
+user@Users-MacBook_Air plant_finder % bin/run
 ```
 7. Congrats 🎉  you can now search for plants!
 ## Usage 🌲
