@@ -13,7 +13,7 @@ Users can access PlantFinder by cloning this repository.
 
 4. In the user terminal enter 'git clone':
 ```
-user@Users-MacBook_Air % git clone [github link]
+user@Users-MacBook_Air % git clone [paste link] 
 ```
 and press enter.
 
