@@ -16,7 +16,7 @@ class PlantFinder::Plant
     def self.find_by_common_name(name)
         new_name = name.capitalize
         if @@common_names.include?(new_name)
-            @@plants.find { |plant| plant.common_name.downcase == new_name.downcase }
+            @@plants.find { |plant| plant.common_name == new_name}
         end
     end
     #instance method 
