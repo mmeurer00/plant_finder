@@ -1,4 +1,4 @@
-# This is where the data will be stored
+
 class PlantFinder::Plant
         @@plants = []
         @@common_names = []
@@ -12,14 +12,14 @@ class PlantFinder::Plant
         @@plants << self
         @@common_names << plant_hash["common_name"]
     end
-    # will return the first plant object / class method  down below
+   
     def self.find_by_common_name(name)
         new_name = name.capitalize
         if @@common_names.include?(new_name)
             @@plants.find { |plant| plant.common_name == new_name}
         end
     end
-    #instance method 
+ 
     def common_name
         @common_name
     end
