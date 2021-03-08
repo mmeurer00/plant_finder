@@ -4,6 +4,7 @@ class PlantFinder::CLI
     def run
         greeting
         PlantFinder::API.new.get_plant_data
+        list
         input
         goodbye
     end
@@ -23,6 +24,14 @@ class PlantFinder::CLI
    puts " ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ ".colorize(:green)
         puts "\nThe best data base for looking up plant classification!".colorize(:yellow)
         puts "\n---___--- * Loading Data * ---___---".colorize(:magenta)
+    end
+
+    def list
+        plant_list = PlantFinder::Plant.all
+        puts "\n ~COMMON NAMES LIST~ \n ".colorize(:green)
+        plant_list.each do |plant|
+            puts " \n -> #{plant.common_name}".colorize(:green)
+        end
     end
 
     def input
