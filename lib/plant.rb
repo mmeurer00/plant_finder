@@ -20,23 +20,4 @@ class PlantFinder::Plant
         end
     end
  
-    def common_name
-        @common_name
-    end
-
-    def scientific_name
-        @scientific_name
-    end
-
-    def family_common_name
-        @family_common_name
-    end
-
-    def genus
-        @genus
-    end
-
-    def family
-        @family
-    end
 end

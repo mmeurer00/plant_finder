@@ -4,6 +4,12 @@
 ### API: Get data
 ### STORE DATA: Objects -> PlANTS
 
+# Seperation of Concerns
+    - 
+    - 
+    - 
+
+
 
 
 
