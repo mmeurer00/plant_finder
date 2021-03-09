@@ -36,7 +36,7 @@ class PlantFinder::CLI
 
     def input
         while true
-            puts " \nPlease enter the common name of a plant species (enter 'exit' to close program):\n".colorize(:yellow)
+            puts " \nPlease enter the common name of a plant species chosing from the list above (enter 'exit' to close program):\n".colorize(:yellow)
             name = gets.chomp
             if name == "exit" 
                 return
