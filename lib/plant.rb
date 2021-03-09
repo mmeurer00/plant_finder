@@ -16,6 +16,15 @@ class PlantFinder::Plant
             @@plants.find { |plant| plant.common_name == new_name}
     end
 
+    def self.find_by_genus(name)
+        new_name = name.capitalize
+        #genuses = []
+        @@plants.select do |plant| 
+             plant.genus == new_name
+        end
+        #genuses
+    end
+
     def self.all
         @@plants
     end
